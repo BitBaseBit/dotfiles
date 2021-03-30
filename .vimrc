@@ -1,4 +1,5 @@
 " BEGIN COC CONFIG
+"
 " TextEdit might fail if hidden is not set.
 set hidden
 let g:ale_disable_lsp = 1
