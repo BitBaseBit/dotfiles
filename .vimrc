@@ -58,16 +58,11 @@ filetype plugin indent on
 set rtp+=~/vimfiles/bundle/Vundle.vim
 call vundle#begin('$HOME/vimfiles/bundle/')
 
-"this is for solidity compile with :make
-augroup quickfix
-    autocmd!
-    autocmd QuickFixCmdPost make nested copen
-augroup END
 " let Vundle manage Vundle, required
 " 
 Plugin 'VundleVim/Vundle.vim' 
+Plugin 'dense-analysis/ale'
 Plugin 'dmdque/solidity.vim'
-Plugin 'codota/tabnine-vim'
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 Plugin 'octol/vim-cpp-enhanced-highlight' 
@@ -141,12 +136,11 @@ set cmdheight=1
 
 call plug#begin() 
 Plug 'huyvohcmc/atlas.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 Plug 'ollykel/v-vim'
 Plug 'godlygeek/tabular'
 Plug 'sainnhe/gruvbox-material'
 Plug 'airblade/vim-rooter' 
-Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  } 
 Plug 'junegunn/fzf.vim' 
 Plug 'Shougo/denite.nvim' 
@@ -161,8 +155,6 @@ Plug 'mbbill/undotree'
 Plug 'preservim/nerdtree' 
 Plug 'preservim/nerdcommenter' 
 Plug 'morhetz/gruvbox' 
-Plug 'xero/blaquemagick.vim' 
-Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-multiple-cursors' 
 call plug#end()
 
