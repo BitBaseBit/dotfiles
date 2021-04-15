@@ -1,12 +1,8 @@
-
 set hidden
-
-
-let g:zig_fmt_autosave = 0
-
 
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
+
 
  " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -52,7 +48,7 @@ let g:v_highlight_fields = 0
 
 set nocompatible              " be iMproved, required
 
-filetype off
+syntax enable
 filetype plugin indent on
 " set the runtime path to include Vundle and initialize
 set rtp+=~/vimfiles/bundle/Vundle.vim
@@ -61,10 +57,8 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 " let Vundle manage Vundle, required
 " 
 Plugin 'VundleVim/Vundle.vim' 
-Plugin 'dense-analysis/ale'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dmdque/solidity.vim'
-Plugin 'neovimhaskell/haskell-vim'
-Plugin 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 Plugin 'octol/vim-cpp-enhanced-highlight' 
 Plugin 'vim-airline/vim-airline' 
 Plugin 'vim-airline/vim-airline-themes' 
@@ -113,12 +107,14 @@ set nowrap
 let g:gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe' 
 set backspace=2
 
-let g:airline_theme='solarized' 
+let g:airline_theme='zenburn' 
 let g:airline#extensions#tabline#enabled = 1 
 
-set termguicolors
 
-colorscheme solarized8
+set termguicolors
+colorscheme zenburn
+let g:zenburn_subdued_LineNr=1
+
 
 set undofile
 
@@ -136,17 +132,15 @@ set cmdheight=1
 
 call plug#begin() 
 Plug 'huyvohcmc/atlas.vim'
+Plug 'vim-syntastic/syntastic'
 Plug 'sheerun/vim-polyglot'
-Plug 'ollykel/v-vim'
 Plug 'godlygeek/tabular'
-Plug 'sainnhe/gruvbox-material'
 Plug 'airblade/vim-rooter' 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  } 
 Plug 'junegunn/fzf.vim' 
 Plug 'Shougo/denite.nvim' 
 Plug 'roxma/nvim-yarp' 
 Plug 'roxma/vim-hug-neovim-rpc' 
-Plug 'ayu-theme/ayu-vim' 
 Plug 'jiangmiao/auto-pairs' 
 Plug 'easymotion/vim-easymotion' 
 Plug 'lfilho/cosco.vim' 
@@ -154,7 +148,6 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'mbbill/undotree' 
 Plug 'preservim/nerdtree' 
 Plug 'preservim/nerdcommenter' 
-Plug 'morhetz/gruvbox' 
 Plug 'terryma/vim-multiple-cursors' 
 call plug#end()
 
@@ -213,4 +206,5 @@ let g:airline_powerline_fonts = 0
 set ignorecase
 set smartcase
 set gdefault
+nnoremap gd :YcmCompleter GoTo<CR>
 
