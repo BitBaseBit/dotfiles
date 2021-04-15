@@ -1,0 +1,2 @@
+wsl --import <Image Name> <Directory where you want to store the imported image> <Directory where the exported .tar file exists>
+wsl --export <Image Name> <Export location file name.tar>
