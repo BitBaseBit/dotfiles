@@ -1,9 +1,7 @@
 set hidden
 
-let g:gitgutter_git_executable='/bin/git'
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
-let g:gitgutter_git_executable='/bin/git'
 let g:airline#extensions#hunks#enabled=1
 
 
@@ -61,7 +59,7 @@ call vundle#begin('$HOME/.vim/bundle/')
 " let Vundle manage Vundle, required
 " 
 Plugin 'VundleVim/Vundle.vim' 
-Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dmdque/solidity.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight' 
@@ -109,7 +107,6 @@ set shiftwidth=4
 set incsearch 
 set nowrap
 
-let g:gitgutter_git_executable = '/usr/bin/git' 
 set backspace=2
 
 let g:airline_theme='papercolor' 
@@ -121,14 +118,18 @@ if !exists('g:airline_symbols')
 endif
 
 " airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+let g:airline_left_sep = '⚡'
+let g:airline_left_alt_sep = '⚡'
+let g:airline_right_sep = '⚡'
+let g:airline_symbols.linenr = '☰'
+let g:airline_right_alt_sep = '⚡'
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+let g:airline_symbols.dirty='⚡'
 
+let g:airline#extensions#branch#enabled=1
+let g:airline#extensions#fzf#enabled=1
 
 set termguicolors
 colorscheme nofrils-light
