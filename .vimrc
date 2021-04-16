@@ -1,7 +1,11 @@
 set hidden
 
+let g:gitgutter_git_executable='/bin/git'
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
+let g:gitgutter_git_executable='/bin/git'
+let g:airline#extensions#hunks#enabled=1
+
 
 
  " Add spaces after comment delimiters by default
@@ -51,12 +55,13 @@ set nocompatible              " be iMproved, required
 syntax enable
 filetype plugin indent on
 " set the runtime path to include Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
-call vundle#begin('$HOME/vimfiles/bundle/')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('$HOME/.vim/bundle/')
 
 " let Vundle manage Vundle, required
 " 
 Plugin 'VundleVim/Vundle.vim' 
+Plugin 'airblade/vim-gitgutter'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dmdque/solidity.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight' 
@@ -104,17 +109,29 @@ set shiftwidth=4
 set incsearch 
 set nowrap
 
-let g:gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe' 
+let g:gitgutter_git_executable = '/usr/bin/git' 
 set backspace=2
 
-let g:airline_theme='zenburn' 
-let g:airline#extensions#tabline#enabled = 1 
+let g:airline_theme='papercolor' 
+let g:airline#extensions#tabline#enabled=1 
+let g:airline_powerline_fonts=1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 
 set termguicolors
-colorscheme zenburn
-let g:zenburn_subdued_LineNr=1
-
+colorscheme nofrils-light
 
 set undofile
 
@@ -187,6 +204,7 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 vnoremap <leader>c :s/^/\/\//<CR>
 vnoremap <leader>r :s/\/\///g<CR>
 inoremap jj <ESC>
+nmap <C-i> <plug>(YCMHover)
 
 
 nnoremap <left> :bp<CR>
@@ -207,4 +225,5 @@ set ignorecase
 set smartcase
 set gdefault
 nnoremap gd :YcmCompleter GoTo<CR>
-
+let g:ycm_auto_hover=''
+let g:ycm_add_preview_to_completeopt=0
