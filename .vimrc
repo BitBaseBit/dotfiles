@@ -59,6 +59,8 @@ call vundle#begin('$HOME/.vim/bundle/')
 " let Vundle manage Vundle, required
 " 
 Plugin 'VundleVim/Vundle.vim' 
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dmdque/solidity.vim'
@@ -228,3 +230,16 @@ set gdefault
 nnoremap gd :YcmCompleter GoTo<CR>
 let g:ycm_auto_hover=''
 let g:ycm_add_preview_to_completeopt=0
+set completeopt-=preview
+set signcolumn=no
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
