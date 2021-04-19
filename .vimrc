@@ -1,5 +1,6 @@
 set hidden
 
+set cinoptions=:0,l1,t0,g0,(0
 set noshowmode
 set noruler
 set laststatus=0
@@ -213,9 +214,11 @@ nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR> 
 inoremap <C-e> <ESC>bveU
 inoremap <C-j> <ESC>A;
+
 vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>ag :Tabularize /:=<CR>
+vmap <Leader>f :Tabularize /^\s*\S\+\zs/l0c1l0<CR>
 vnoremap <leader>c :s/^/\/\//<CR>
 vnoremap <leader>r :s/\/\///g<CR>
 inoremap jj <ESC>
