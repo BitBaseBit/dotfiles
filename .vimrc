@@ -1,8 +1,19 @@
 set hidden
 
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+set cmdheight=1
+set nonu
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
-let g:airline#extensions#hunks#enabled=1
+"let g:airline#extensions#hunks#enabled=1
+"let g:airline_section_b =''
+"let g:airline_section_y=''
+"let g:airline_section_error=''
+"let g:airline_section_warning=''
+"let g:airline_section_c=''
 
 
 
@@ -65,8 +76,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dmdque/solidity.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight' 
-Plugin 'vim-airline/vim-airline' 
-Plugin 'vim-airline/vim-airline-themes' 
+"Plugin 'vim-airline/vim-airline' 
+"Plugin 'vim-airline/vim-airline-themes' 
 Plugin 'rafi/awesome-vim-colorschemes'
 
 
@@ -111,27 +122,27 @@ set nowrap
 
 set backspace=2
 
-let g:airline_theme='papercolor' 
-let g:airline#extensions#tabline#enabled=1 
-let g:airline_powerline_fonts=1
+"let g:airline_theme='papercolor' 
+"let g:airline#extensions#tabline#enabled=1 
+"let g:airline_powerline_fonts=1
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+"if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+"endif
 
 " airline symbols
-let g:airline_left_sep = '⚡'
-let g:airline_left_alt_sep = '⚡'
-let g:airline_right_sep = '⚡'
-let g:airline_symbols.linenr = '☰'
-let g:airline_right_alt_sep = '⚡'
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-let g:airline_symbols.dirty='⚡'
-
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#fzf#enabled=1
+"let g:airline_left_sep = '❱'
+"let g:airline_left_alt_sep = '❱'
+"let g:airline_right_sep = '❰'
+"let g:airline_symbols.linenr = '❱'
+"let g:airline_right_alt_sep = '❰'
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
+"let g:airline_symbols.dirty='✘'
+"
+"let g:airline#extensions#branch#enabled=1
+"let g:airline#extensions#fzf#enabled=1
 
 set termguicolors
 colorscheme nofrils-light
@@ -152,6 +163,7 @@ set cmdheight=1
 
 call plug#begin() 
 Plug 'huyvohcmc/atlas.vim'
+Plug 'ap/vim-buftabline'
 Plug 'vim-syntastic/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'godlygeek/tabular'
@@ -208,10 +220,15 @@ vnoremap <leader>c :s/^/\/\//<CR>
 vnoremap <leader>r :s/\/\///g<CR>
 inoremap jj <ESC>
 nmap <C-i> <plug>(YCMHover)
+inoremap <C-k> :=
+inoremap <C-c> <-
 
-
-nnoremap <left> :bp<CR>
-nnoremap <right> :bn<CR>
+"nnoremap <left> :bp<CR>
+"nnoremap <right> :bn<CR>
+"nnoremap <left> :bp<CR>
+"nnoremap <right> :bn<CR>
+nnoremap <C-j> :bp<CR> 
+nnoremap <C-k> :bn<CR>
 "set laststatus=2
 "let g:rainbow_active = 1
 " Put these lines at the very end of your vimrc file.
@@ -222,7 +239,6 @@ packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
-let g:airline_powerline_fonts = 0
 
 set ignorecase
 set smartcase
@@ -236,10 +252,20 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_key_list_previous_completion = ['<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+set cmdheight=1
+autocmd InsertEnter,InsertLeave * set cul!
+set nonu
+
+
