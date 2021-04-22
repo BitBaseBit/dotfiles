@@ -1,5 +1,6 @@
 set hidden
 
+let g:ycm_filetype_blacklist = { 'javascript': 1 }
 set cinoptions=:0,l1,t0,g0,(0
 set noshowmode
 set noruler
