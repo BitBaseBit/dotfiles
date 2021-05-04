@@ -118,7 +118,6 @@ set gdefault
 nnoremap gd :YcmCompleter GoTo<CR>
 let g:ycm_auto_hover=''
 let g:ycm_add_preview_to_completeopt=0
-let g:ycm_auto_trigger=0
 set completeopt-=preview
 set signcolumn=no
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
