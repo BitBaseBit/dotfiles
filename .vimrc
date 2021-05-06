@@ -12,7 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
-Plugin 'ycm-core/YouCompleteMe'
+Plugin 'christoomey/vim-tmux-navigator'
 
 
 " All of your Plugins must be added before the following line
