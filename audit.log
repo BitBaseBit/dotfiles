@@ -1,0 +1,10 @@
+t=2021-05-08T15:55:18+0000 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-05-08T15:58:26+0000 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-05-08T15:58:26+0000 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-05-08T15:58:56+0000 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-05-08T16:00:34+0000 lvl=info msg=List       api=signer type=response data=[]
+t=2021-05-08T16:02:27+0000 lvl=info msg=Configured api=signer audit log=audit.log
+t=2021-05-08T16:02:41+0000 lvl=info msg=Version    api=signer type=request metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-05-08T16:02:41+0000 lvl=info msg=Version    api=signer type=response data=6.1.0 error=nil
+t=2021-05-08T16:07:23+0000 lvl=info msg=List       api=signer type=request  metadata="{\"remote\":\"NA\",\"local\":\"NA\",\"scheme\":\"NA\",\"User-Agent\":\"\",\"Origin\":\"\"}"
+t=2021-05-08T16:07:43+0000 lvl=info msg=List       api=signer type=response data=[0x42f134CD1110AbA95Be899406228128763980163]
