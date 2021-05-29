@@ -3,7 +3,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'ycm-core/YouCompleteMe'
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,6 +52,7 @@ set nowritebackup
 " Give more space for displaying messages.
 set cmdheight=1
 
+<<<<<<< HEAD
 call plug#begin()
 Plug 'ap/vim-buftabline'
 Plug 'godlygeek/tabular'
