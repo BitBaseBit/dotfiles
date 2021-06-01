@@ -16,8 +16,10 @@ alias ..3="cd ../../.."
 
 alias gcc="gcc-11"
 alias g++="g++-11"
+alias clang="clang-12"
+alias clang++="clang++-12"
 
-export PATH=$PATH:/home/bitbasebit/go/bin
+export PATH=$PATH:/home/bitbasebit/go/bin:/home/bitbasebit/dev/zig-latest/
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -127,5 +129,6 @@ if ! shopt -oq posix; then
   fi
 fi
 . "$HOME/.cargo/env"
+export TERM="xterm-256color"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

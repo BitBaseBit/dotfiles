@@ -1,7 +1,16 @@
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
 
+set background=light
+let g:go_fmt_command = "goimports"
+let g:go_highlight_types = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_function_calls = 1
+
+set nocompatible
+filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -10,6 +19,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tomlion/vim-solidity'
+Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'ycm-core/YouCompleteMe'
@@ -18,7 +29,6 @@ Plugin 'ycm-core/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
 
 set encoding=utf-8
 set number
@@ -28,14 +38,18 @@ let mapleader = " "
 
 set autoindent
 set expandtab
-set tabstop=4
-set shiftwidth=4
 set incsearch
 set nowrap
 
 set backspace=2
 
-set termguicolors
+let g:everforest_background = 'soft'
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 colorscheme nofrils-light
 
 set undofile
@@ -52,9 +66,13 @@ set nowritebackup
 " Give more space for displaying messages.
 set cmdheight=1
 
-<<<<<<< HEAD
 call plug#begin()
 Plug 'ap/vim-buftabline'
+Plug 'sainnhe/everforest'
+Plug 'karoliskoncevicius/sacredforest-vim'
+Plug 'fatih/molokai'
+Plug 'cormacrelf/vim-colors-github'
+Plug 'ziglang/zig.vim'
 Plug 'godlygeek/tabular'
 Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
@@ -132,11 +150,24 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-set noshowmode
-set noruler
-set laststatus=0
-set noshowcmd
-set cmdheight=1
 autocmd InsertEnter,InsertLeave * set cul!
 set autowrite
 set encoding=utf-8
+"ensure zig is a recognized filetype
+"
+set tabstop=4
+autocmd BufNewFile,BufRead *.zig set filetype=zig
+filetype plugin indent on    " required
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+let g:ycm_language_server =
+  \ [
+  \{
+  \     'name': 'zls',
+  \     'filetypes': [ 'zig' ],
+  \     'cmdline': [ '/home/bitbasebit/zls/zls' ]
+  \    }
+  \ ]
+filetype plugin indent on    " required
