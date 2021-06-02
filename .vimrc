@@ -1,6 +1,5 @@
 
 
-set background=light
 let g:go_fmt_command = "goimports"
 let g:go_highlight_types = 1
 let g:go_highlight_structs = 1
@@ -8,6 +7,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_function_calls = 1
+
 
 set nocompatible
 filetype off                  " required
@@ -43,14 +43,14 @@ set nowrap
 
 set backspace=2
 
-let g:everforest_background = 'soft'
+set t_Co=256
+let g:zenburn_alternate_Error = 1
+let g:zenburn_disable_Label_underline = 1
+let g:zenburn_disable_bold_CursorBars=1
+let g:zenburn_high_Contrast = 0
+let g:zenburn_transparent = 1
 
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-colorscheme nofrils-light
+colo zenburn
 
 set undofile
 
@@ -68,6 +68,7 @@ set cmdheight=1
 
 call plug#begin()
 Plug 'ap/vim-buftabline'
+Plug 'junegunn/seoul256.vim'
 Plug 'sainnhe/everforest'
 Plug 'karoliskoncevicius/sacredforest-vim'
 Plug 'fatih/molokai'
@@ -159,6 +160,7 @@ set tabstop=4
 autocmd BufNewFile,BufRead *.zig set filetype=zig
 filetype plugin indent on    " required
 set shiftwidth=4
+autocmd FileType go setlocal shiftwidth=8 tabstop=8 
 " On pressing tab, insert 4 spaces
 set expandtab
 
