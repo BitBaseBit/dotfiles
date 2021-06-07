@@ -3,7 +3,7 @@
     "editor.fontSize": 16,
     "editor.fontFamily": "Liberation Mono",
     "editor.cursorBlinking": "solid",
-    "vim.vimrc.path": "~/.vimrc",
-    "vim.vimrc.enable": true,
-    "editor.find.cursorMoveOnType": false
+    "vim.vimrc.path": "/home/bitbasebit/coderc/_vimrc",
+    "editor.find.cursorMoveOnType": false,
+    "vim.vimrc.enable": true
 }
