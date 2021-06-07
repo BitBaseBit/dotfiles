@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Everforest Dark",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Liberation Mono",
+    "editor.cursorBlinking": "solid",
+    "vim.vimrc.path": "~/.vimrc",
+    "vim.vimrc.enable": true,
+    "editor.find.cursorMoveOnType": false
+}
