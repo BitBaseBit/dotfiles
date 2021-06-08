@@ -1,9 +1,22 @@
 {
     "workbench.colorTheme": "Everforest Dark",
-    "editor.fontSize": 16,
+    "editor.fontSize": 17,
     "editor.fontFamily": "Liberation Mono",
     "editor.cursorBlinking": "solid",
     "vim.vimrc.path": "/home/bitbasebit/coderc/_vimrc",
     "editor.find.cursorMoveOnType": false,
-    "vim.vimrc.enable": true
+    "vim.vimrc.enable": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.default.cppStandard": "gnu++20",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.experimentalFeatures": "Enabled",
+    "C_Cpp.intelliSenseMemoryLimit": 16000,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.executable": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format",
+    "C_Cpp.clang_format_path": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format"
 }
