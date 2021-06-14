@@ -10,16 +10,19 @@ esac
 
 alias ..="cd .."
 
+alias python3.7="python3"
 alias ..2="cd ../.."
 
 alias ..3="cd ../../.."
+
+export GOPATH=~/go/bin
+
+alias c="sh ../c.sh"
 
 alias gcc="gcc-11"
 alias g++="g++-11"
 alias clang="clang-12"
 alias clang++="clang++-12"
-
-export PATH=$PATH:/home/bitbasebit/go/bin:/home/bitbasebit/dev/zig-latest/
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -29,8 +32,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

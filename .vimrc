@@ -43,14 +43,6 @@ set nowrap
 
 set backspace=2
 
-set t_Co=256
-let g:zenburn_alternate_Error = 1
-let g:zenburn_disable_Label_underline = 1
-let g:zenburn_disable_bold_CursorBars=1
-let g:zenburn_high_Contrast = 0
-let g:zenburn_transparent = 1
-
-colo zenburn
 
 set undofile
 
@@ -135,6 +127,7 @@ set ignorecase
 set smartcase
 set gdefault
 nnoremap gd :YcmCompleter GoTo<CR>
+nnoremap gr :YcmCompleter GoToReferences<CR>
 let g:ycm_auto_hover=''
 let g:ycm_add_preview_to_completeopt=0
 set completeopt-=preview
@@ -173,3 +166,6 @@ let g:ycm_language_server =
   \    }
   \ ]
 filetype plugin indent on    " required
+set background=dark
+set termguicolors
+:colo everforest

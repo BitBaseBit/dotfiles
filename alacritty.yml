@@ -1,0 +1,88 @@
+env:
+  # TERM env customization.
+  #
+  # If this property is not set, alacritty will set it to xterm-256color.
+  #
+  # Note that some xterm terminfo databases don't declare support for italics.
+  # You can verify this by checking for the presence of `smso` and `sitm` in
+  # `infocmp xterm-256color`.
+  TERM: xterm-256color
+shell:
+  program: /bin/bash
+  args:
+    - --login
+padding:
+    x: 0
+    y: 0
+
+  # Spread additional padding evenly around the terminal content.
+    dynamic_padding: false
+
+  # Window decorations
+  #
+  # Available values:
+  # - full: borders and title bar
+  # - none: neither borders nor title bar
+  # - transparent: title bar, transparent background and title bar buttons
+  # - buttonless: title bar, transparent background, but no title bar buttons
+    decorations: none
+
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+    startup_mode: Windowed
+scrolling:
+# maximum number of lines in the scrollback buffer. Specifying '0' will
+# disable scrolling.
+    history: 100000
+
+# Number of lines the viewport will move for every line scrolled when
+# scrollback is enabled (history > 0).
+    multiplier: 2
+bell:
+  animation: EaseOutExpo
+  color: '0xffffff'
+  duration: 0
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  size: 13
+  normal:
+    family: Liberation Mono
+    style: Regular
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: Retina
+colors:
+  # Default colors
+  primary:
+    background: "0x3c4c55"
+    foreground: "0xffebc3"
+
+  # Normal colors
+  normal:
+    black: "0x7f8f9f"
+    red: "0xfd888d"
+    green: "0xa9dd9d"
+    yellow: "0xf0aa8a"
+    blue: "0xbdd0e5"
+    magenta: "0xdaccf0"
+    cyan: "0xa9dd9d"
+    white: "0xffebc3"
+
+  # Bright colors
+  bright:
+    black: "0x7f8f9f"
+    red: "0xfd888d"
+    green: "0xa9dd9d"
+    yellow: "0xeed094"
+    blue: "0xbdd0e5"
+    magenta: "0xdaccf0"
+    cyan: "0xa9dd9d"
+    white: "0xffebc3"
