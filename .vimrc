@@ -1,5 +1,3 @@
-
-
 let g:go_fmt_command = "goimports"
 let g:go_highlight_types = 1
 let g:go_highlight_structs = 1
@@ -19,10 +17,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'guns/vim-sexp'
 Plugin 'tomlion/vim-solidity'
 Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'ycm-core/YouCompleteMe'
 
 
@@ -60,6 +61,13 @@ set cmdheight=1
 
 call plug#begin()
 Plug 'ap/vim-buftabline'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+Plug 'liuchengxu/vim-clap'
+
+" Requires
+Plug 'guns/vim-sexp',    {'for': 'clojure'}
+Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'junegunn/seoul256.vim'
 Plug 'sainnhe/everforest'
 Plug 'karoliskoncevicius/sacredforest-vim'
@@ -169,3 +177,5 @@ filetype plugin indent on    " required
 set background=dark
 set termguicolors
 :colo everforest
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_github=1
