@@ -10,7 +10,6 @@ esac
 
 alias ..="cd .."
 
-alias python3.7="python3"
 alias ..2="cd ../.."
 
 alias ..3="cd ../../.."
@@ -19,10 +18,7 @@ export GOPATH=~/go/bin
 
 alias c="sh ../c.sh"
 
-alias gcc="gcc-11"
-alias g++="g++-11"
-alias clang="clang-12"
-alias clang++="clang++-12"
+export PATH=$PATH:/home/greg/go/bin:/usr/local/bin/stack:/home/greg/.local/bin:/home/greg/go/bin/bin/:/root/.local/bin
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -132,6 +128,5 @@ if ! shopt -oq posix; then
   fi
 fi
 . "$HOME/.cargo/env"
-export TERM="xterm-256color"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
