@@ -1,33 +1,26 @@
-export PATH=$HOME/.local/bin:$PATH
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-cd ~/
+alias ..="cd .."
 
+alias ..2="cd ../.."
+
+alias ..3="cd ../../.."
+
+export GOPATH=~/go/bin
+
+alias c="sh ../c.sh"
+
+export PATH=$PATH:/home/greg/go/bin:/usr/local/bin/stack:/home/greg/.local/bin:/home/greg/go/bin/bin/:/root/.local/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/gregv/.oh-my-zsh"
+export ZSH="/home/greg/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
-SPACESHIP_PROMPT_ORDER=(
-  dir           # Current directory section
-  git           # Git section (git_branch + git_status)
-  package       # Package version
-  node          # Node.js section
-  dotnet        # .NET section
-  ruby          # Ruby section
-  exec_time     # Execution time
-  line_sep      # Line break
-  battery       # Battery level and status
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
+ZSH_THEME="intheloop"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -89,7 +82,7 @@ SPACESHIP_PROMPT_ORDER=(
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,5 +111,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll="ls -la"
-
+export TERM="xterm-256color"
