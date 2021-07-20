@@ -52,9 +52,9 @@ bell:
 font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
-  size: 13
+  size: 14
   normal:
-    family: Liberation Mono
+    family: PragmataPro Mono
     style: Regular
     # family: "Fira Code"
     # family: "Source Code Pro"

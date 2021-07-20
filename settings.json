@@ -1,9 +1,9 @@
 {
-    "workbench.colorTheme": "Everforest Dark",
     "editor.fontSize": 17,
-    "editor.fontFamily": "Liberation Mono",
+    "editor.fontFamily": "PragmataPro Mono",
     "editor.cursorBlinking": "solid",
-    "vim.vimrc.path": "/home/bitbasebit/coderc/_vimrc",
+    "window.menuBarVisibility": "toggle",
+    "vim.vimrc.path": "/home/greg/_vimrc",
     "editor.find.cursorMoveOnType": false,
     "vim.vimrc.enable": true,
     "C_Cpp.autocompleteAddParentheses": true,
@@ -11,12 +11,63 @@
     "C_Cpp.default.cStandard": "c17",
     "C_Cpp.experimentalFeatures": "Enabled",
     "C_Cpp.intelliSenseMemoryLimit": 16000,
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "xaver.clang-format",
-    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false,
+    "editor.formatOnSave": false,
     "[c]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "clang-format.executable": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format",
-    "C_Cpp.clang_format_path": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format"
+    "C_Cpp.clang_format_path": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format",
+    "workbench.colorTheme": "Everforest Dark",
+    "terminal.integrated.fontSize": 17,
+    "tabnine.experimentalAutoImports": true,
+    "python.formatting.provider": "black",
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "gd": true
+    },
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["g", "D"],
+            "commands": ["editor.action.revealDefinitionAside"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "after": ["<leader>", "<leader>", "2", "s"]
+          },
+          {
+            "before": ["<leader>", "d"],
+            "after": ["<leader>", "<leader>", "j"]
+          },
+          {
+            "before": ["<leader>", "u"],
+            "after": ["<leader>", "<leader>", "k"]
+          }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "editor.lightbulb.enabled": false,
+    "search.useIgnoreFiles": false,
+    "security.workspace.trust.untrustedFiles": "open"
 }
