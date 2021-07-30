@@ -18,6 +18,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'psf/black'
 Plugin 'guns/vim-sexp'
 Plugin 'tomlion/vim-solidity'
 Plugin 'fatih/vim-go'
@@ -66,12 +67,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'liuchengxu/vim-clap'
 
 " Requires
-Plug 'guns/vim-sexp',    {'for': 'clojure'}
-Plug 'liquidz/vim-iced', {'for': 'clojure'}
 Plug 'junegunn/seoul256.vim'
 Plug 'sainnhe/everforest'
 Plug 'karoliskoncevicius/sacredforest-vim'
-Plug 'fatih/molokai'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'ziglang/zig.vim'
 Plug 'godlygeek/tabular'

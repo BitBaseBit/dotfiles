@@ -6,12 +6,22 @@ alias ..="cd .."
 alias ..2="cd ../.."
 
 alias ..3="cd ../../.."
-
-export GOPATH=~/go/bin
+alias "rm -rf"="sh ~/.local/bin/rm.sh"
+alias "rm -r"="sh ~/.local/bin/rm.sh"
+alias "swarp"="source ~/warp/bin/activate"
 
 alias c="sh ../c.sh"
+alias code="/usr/bin/code"
+alias p="python"
 
-export PATH=$PATH:/home/greg/go/bin:/usr/local/bin/stack:/home/greg/.local/bin:/home/greg/go/bin/bin/:/root/.local/bin
+export PATH_1=/home/greg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH_2=/usr/local/games:/snap/bin:/home/greg/go/bin:/usr/local/bin/stack
+export PATH_3=/home/greg/go/bin/bin/:/root/.local/bin:/home/greg/.fzf/bin
+export PATH_4=/home/greg/dev/go-ethereum/build/bin
+export PATH=/home/greg/.nix-profile/bin:/home/greg/.cargo/bin:$PATH_1:$PATH_2:$PATH_3:$PATH_4
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export gateway="https://warp-external.integration.starknet.io"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/greg/.oh-my-zsh"
@@ -112,3 +122,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export TERM="xterm-256color"
+. "$HOME/.cargo/env"
+
