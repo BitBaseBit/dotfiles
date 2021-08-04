@@ -1,0 +1,24 @@
+/* Serenade custom pronunciations
+
+In this file, you can add your own custom word aliases. For instance, you could map "foo" to "bar" with:
+
+{
+  "words": {
+    "foo": "bar"
+  }
+}
+
+Add your own words to the JSON object below:
+
+*/
+
+{
+  "words": {
+    "tp" : "transpiler",
+    "fc" : "focus code",
+    "ft" : "focus terminal",
+    "gs" : "git status",
+    "gp" : "git push",
+    "transpire" : "transpile"
+  }
+}
