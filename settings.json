@@ -112,6 +112,12 @@
     "editor.fontLigatures": true,
     "workbench.colorCustomizations": {
         "editor.background": "#e4e4e4",
-        "editorLineNumber.foreground": "#696969"
-    }
+        "editorLineNumber.foreground": "#696969",
+        "tab.activeBackground": "#696969",
+        "tab.activeForeground": "#ffffff",
+        "tab.inactiveBackground": "#e4e4e4",
+        "terminal.background": "#e4e4e4",
+    },
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false
 }
