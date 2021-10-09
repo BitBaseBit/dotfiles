@@ -1,33 +1,20 @@
 {
     "editor.fontSize": 17,
-    "editor.fontFamily": "PragmataPro Mono",
+    "editor.fontFamily": "PragmataPro Mono Liga",
     "editor.cursorBlinking": "solid",
     "window.menuBarVisibility": "toggle",
-    "vim.vimrc.path": "/home/greg/_vimrc",
+    "vim.vimrc.path": "c:\\Users\\vardy\\AppData\\Local\\Programs\\Microsoft VS Code\\_vimrc",
     "editor.find.cursorMoveOnType": false,
     "vim.vimrc.enable": true,
-    "C_Cpp.autocompleteAddParentheses": true,
-    "C_Cpp.default.cppStandard": "gnu++20",
-    "C_Cpp.default.cStandard": "c17",
-    "C_Cpp.experimentalFeatures": "Enabled",
-    "C_Cpp.intelliSenseMemoryLimit": 16000,
     "editor.formatOnType": false,
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
     "editor.formatOnSave": false,
-    "[c]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
-    "clang-format.executable": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format",
-    "C_Cpp.clang_format_path": "/home/bitbasebit/dev/clang-12/clang-12/bin/clang-format",
-    "workbench.colorTheme": "Everforest Dark",
+    "workbench.colorTheme": "Everforest Light",
     "terminal.integrated.fontSize": 17,
     "tabnine.experimentalAutoImports": true,
     "python.formatting.provider": "black",
-    "vim.handleKeys": {
-        "<C-d>": true,
-        "gd": true
-    },
+    "clang-format.executable": "/home/greg/dev/tools/clang/bin/clang-format",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useCtrlKeys": true,
@@ -40,7 +27,7 @@
     ],
     "vim.normalModeKeyBindings": [
         {
-            "before": ["g", "D"],
+            "before": ["g", "d"],
             "commands": ["editor.action.revealDefinitionAside"]
         }
     ],
@@ -65,9 +52,66 @@
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-a>": false,
-        "<C-f>": false
+        "<C-f>": false,
+        "<C-d>": true,
+        "gd": true,
+        "<C-w>": false,
     },
     "editor.lightbulb.enabled": false,
     "search.useIgnoreFiles": false,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "vim.cursorStylePerMode.insert": "line-thin",
+    "vim.cursorStylePerMode.normal": "block",
+    "python.autoComplete.extraPaths": [
+        "/home/greg/warp/lib/",
+        "/home/greg/warp/bin",
+        "/home/greg/warp/lib/python3.7/site-packages",
+        "/home/greg/dev/warp",
+    ],
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.extraPaths": [
+        "/home/greg/warp/lib/",
+        "/home/greg/warp/bin",
+        "/home/greg/warp/lib/python3.7/site-packages",
+        "/home/greg/dev/warp"
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "terminal.integrated.scrollback": 1000000,
+    "go.formatTool": "gofmt",
+    "vyper.compile.onSave": false,
+    "cmake.configureOnOpen": true,
+    "cmake.configureOnEdit": false,
+    "cmake.ctest.parallelJobs": 20,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**"
+    ],
+    "sync.gist": "632e1b5e9fa1839c0316c23f892847f0",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "window.newWindowDimensions": "maximized",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.experimentalFeatures": "Enabled",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.blackPath": "/home/greg/warp/bin/black",
+    "jupyter.searchForJupyter": false,
+    "python.analysis.memory.keepLibraryAst": true,
+    "C_Cpp.intelliSenseCacheSize": 16000,
+    "C_Cpp.intelliSenseMemoryLimit": 8192,
+    "C_Cpp.intelliSenseUpdateDelay": 500,
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.formatting": "clangFormat",
+    "window.zoomLevel": 1,
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "editor.background": "#e4e4e4",
+        "editorLineNumber.foreground": "#696969"
+    }
 }
