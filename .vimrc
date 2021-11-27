@@ -63,23 +63,13 @@ set cmdheight=1
 call plug#begin()
 Plug 'ap/vim-buftabline'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
 Plug 'liuchengxu/vim-clap'
-
-" Requires
-Plug 'junegunn/seoul256.vim'
-Plug 'sainnhe/everforest'
-Plug 'karoliskoncevicius/sacredforest-vim'
-Plug 'cormacrelf/vim-colors-github'
-Plug 'ziglang/zig.vim'
-Plug 'godlygeek/tabular'
 Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'Shougo/denite.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'jremmen/vim-ripgrep'
 Plug 'mbbill/undotree'
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()

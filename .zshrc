@@ -1,23 +1,32 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+cd ~
 alias ..="cd .."
 
 alias ..2="cd ../.."
 
 alias ..3="cd ../../.."
+alias ..4="cd ../../../../"
+alias "gs"="git status"
+alias "sc"="starknet-compile"
 alias "rm -rf"="sh ~/.local/bin/rm.sh"
 alias "rm -r"="sh ~/.local/bin/rm.sh"
-alias "swarp"="source ~/warp/bin/activate"
+alias "code"="/mnt/c/Users/vardy/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code"
+alias "twarp"="source ~/warp_dev/bin/activate"
+alias "swarp"="source ~/pypi_warp/bin/activate"
+alias "gitst"="git add . && git stash"
+
 
 alias c="sh ../c.sh"
-alias code="/usr/bin/code"
 alias p="python"
 
+export DESKTOP=/mnt/c/Users/vardy/Desktop/
+
 export PATH_1=/home/greg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-export PATH_2=/usr/local/games:/snap/bin:/home/greg/go/bin:/usr/local/bin/stack
-export PATH_3=/home/greg/go/bin/bin/:/root/.local/bin:/home/greg/.fzf/bin
-export PATH_4=/home/greg/dev/go-ethereum/build/bin
+export PATH_2=/usr/local/games:/snap/bin:/usr/local/bin/stack
+export PATH_3=/root/.local/bin:/home/greg/.fzf/bin:/usr/local/go/bin
+export PATH_4=/home/greg/dev/go-ethereum/build/bin:/home/greg/.npm-global/bin
 export PATH=/home/greg/.nix-profile/bin:/home/greg/.cargo/bin:$PATH_1:$PATH_2:$PATH_3:$PATH_4
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -30,7 +39,7 @@ export ZSH="/home/greg/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="intheloop"
+ZSH_THEME="smt"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -123,4 +132,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export TERM="xterm-256color"
 . "$HOME/.cargo/env"
+
+
+export COLORTERM=truecolor
 

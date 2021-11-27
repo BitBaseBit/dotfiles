@@ -1,6 +1,8 @@
 set encoding=utf-8
 set number
 
+" Don't use Ex mode, use Q for formatting.
+map Q gq
 let mapleader = " "
 
 
