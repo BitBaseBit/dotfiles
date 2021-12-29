@@ -1,3 +1,4 @@
+export HOME=/home/ubuntu
 sudo apt-get -y install ca-certificates curl gnupg lsb-release
 sudo apt-get -y install zsh
 sudo apt-get -y install dbus-x11 default-jre diffutils
