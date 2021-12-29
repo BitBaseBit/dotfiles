@@ -1,0 +1,192 @@
+{
+  "window.titleBarStyle": "custom",
+  "python.linting.pylintArgs": ["-j 20", "-E"],
+  "editor.semanticHighlighting.enabled": true,
+  "editor.fontSize": 17,
+  "editor.fontFamily": "JetbrainsMono NF",
+  "editor.cursorBlinking": "solid",
+  "vim.vimrc.path": "c:\\Users\\vardy\\AppData\\Local\\Programs\\Microsoft VS Code\\_vimrc",
+  "editor.find.cursorMoveOnType": false,
+  "vim.vimrc.enable": true,
+  "editor.formatOnType": false,
+  "editor.occurrencesHighlight": false,
+  "editor.selectionHighlight": false,
+  "terminal.integrated.fontSize": 18,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-n>": true,
+    "<C-a>": true,
+    "<C-s>": true,
+    "<C-l>": true,
+    "<C-f>": false,
+    "<C-d>": true,
+    "gd": true,
+    "<C-w>": false,
+    "<C-h>": true,
+    "<C-k>": true
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>", "l"]
+    },
+    {
+      "before": ["<C-a>"],
+      "after": ["<ESC>", "A"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<ESC>", "o"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-h>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["<leader>", "<leader>", "j"]
+    }
+  ],
+  "vim.surround": true,
+  "editor.formatOnSave": false,
+  "editor.lightbulb.enabled": false,
+  "search.useIgnoreFiles": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.normal": "block",
+  "python.autoComplete.extraPaths": [
+    "/home/greg/warp/lib/",
+    "/home/greg/warp/bin",
+    "/home/greg/warp/lib/python3.7/site-packages",
+    "/home/greg/dev/warp"
+  ],
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.analysis.extraPaths": [
+    "/home/greg/warp/lib/",
+    "/home/greg/warp/bin",
+    "/home/greg/warp/lib/python3.7/site-packages",
+    "/home/greg/dev/warp"
+  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.scrollback": 1000000,
+  "go.formatTool": "gofmt",
+  "vyper.compile.onSave": false,
+  "cmake.configureOnOpen": true,
+  "cmake.configureOnEdit": false,
+  "cmake.ctest.parallelJobs": 20,
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
+  "sync.gist": "632e1b5e9fa1839c0316c23f892847f0",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "formatFiles.excludedFolders": [
+    "build",
+    "node_modules",
+    ".vscode",
+    ".git",
+    "dist",
+    ".chrome"
+  ],
+  "window.newWindowDimensions": "maximized",
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.experimentalFeatures": "Enabled",
+  "python.formatting.blackPath": "/home/greg/warp_dev/bin/black",
+  "jupyter.searchForJupyter": false,
+  "python.analysis.memory.keepLibraryAst": true,
+  "C_Cpp.intelliSenseCacheSize": 10240,
+  "C_Cpp.intelliSenseMemoryLimit": 16384,
+  "C_Cpp.intelliSenseUpdateDelay": 500,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.formatting": "clangFormat",
+  "editor.fontLigatures": true,
+  "editor.folding": false,
+  "workbench.editor.showIcons": false,
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.openEditors.visible": 0,
+  "window.restoreFullscreen": true,
+  "cairols.venvCommand": ". ~/warp/bin/activate",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.minimap.enabled": false,
+  "editor.lineHeight": 28,
+  "editor.overviewRulerBorder": false,
+  "editor.lineDecorationsWidth": 10, // undocumented,
+  "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.activityBar.visible": false,
+  "solidity.defaultCompiler": "localFile",
+  "solidity.compileUsingLocalVersion": "/usr/local/bin/solc",
+  "files.maxMemoryForLargeFilesMB": 8192,
+  "C_Cpp.default.cStandard": "c17",
+  "c-cpp-flylint.clang.pedantic": true,
+  "c-cpp-flylint.clang.pedanticErrors": true,
+  "c-cpp-flylint.flawfinder.enable": false,
+  "C_Cpp.default.mergeConfigurations": true,
+  "c-cpp-flylint.lizard.enable": false,
+  "c-cpp-flylint.flexelint.enable": false,
+  "c-cpp-flylint.cppcheck.verbose": true,
+  "window.menuBarVisibility": "toggle",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "cpp": false,
+    "python": true
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "clang-format.fallbackStyle": "Google",
+  "window.zoomLevel": 2,
+  "workbench.startupEditor": "none",
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "everforest.darkWorkbench": "flat",
+  "everforest.italicComments": false,
+  "zenMode.hideTabs": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "typescript.format.semicolons": "insert",
+  "typescript.tsserver.maxTsServerMemory": 16834,
+  "workbench.colorCustomizations": {
+    "editorInlayHint.background": "#ff000000",
+    "editorInlayHint.foreground": "#868686"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.useAliasesForRenames": false,
+  "search.maintainFileSearchCache": true,
+  "search.exclude": {
+    "./build": true,
+    "**/node_modules": false
+  },
+  "workbench.statusBar.visible": false,
+  "extensions.ignoreRecommendations": true,
+  "workbench.colorTheme": "Eva Dark",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.formatting.provider": "black",
+  "python.linting.pylamaEnabled": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.diagnostics.sourceMapsEnabled": true,
+  "debug.console.fontSize": 16,
+  "scm.inputFontSize": 18,
+  "markdown.preview.fontSize": 18
+}
