@@ -65,6 +65,10 @@ hooks.add("install_plugins", function(use)
    use {
       "airblade/vim-rooter"
    }
+   use {'nvim-orgmode/orgmode', config = function()
+        require('orgmode').setup{}
+    end
+  }
 
 end)
 
